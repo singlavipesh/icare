@@ -1,0 +1,40 @@
+{
+  "name": "icare",
+  "description": "Open Source Carpooling Platform",
+  "keywords": [
+    "Carpooling",
+    "Rails",
+    "MongoDB"
+  ],
+  "website": "http://icare.diowa.com/",
+  "repository": "https://github.com/diowa/icare",
+  "success_url": "/",
+  "scripts": {
+    "postdeploy": "bundle exec rake db:setup db:mongoid:create_indexes"
+  },
+  "env": {
+    "NEW_RELIC_APP_NAME": {
+      "description": "Sets the name of your application as it will appear on the New Relic dashboard.",
+      "value": "icare"
+    },
+    "RAILS_ENV": "production",
+    "RUBY_GC_HEAP_OLDOBJECT_LIMIT_FACTOR": {
+      "description": "Reduces RGenGC's memory consumption",
+      "value": "1.3"
+    },
+    "SECRET_TOKEN": {
+      "description": "This gets generated",
+      "generator": "secret"
+    },
+    "DEVISE_SECRET_KEY": {
+      "description": "This gets generated",
+      "generator": "secret"
+    }
+  },
+  "addons": [
+    "mongolab:sandbox",
+    "newrelic:stark",
+    "papertrail",
+    "redistogo:nano"
+  ]
+}
