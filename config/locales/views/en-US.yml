@@ -48,7 +48,7 @@ en-US:
       show_on_map: Show on map
       facebook_verified: Verified on Facebook
 
-  meta_title: "Open Source Carpooling Platform: %{appname}"
+  meta_title: "Ride Sharing Platform: %{appname}"
   meta_description: "Share your itineraries, save money and earn friends."
 
   login: Log in
@@ -238,7 +238,7 @@ en-US:
       vehicle_avg_consumption_help: Use a point to separate decimals. This value is used in the fuel cost estimate when creating a new itinerary.
       vehicle_avg_consumption_note: "Note: Write in this field the %{fuel} value of %{proportional_costs} table"
       fuel: Carburante
-      proportional_costs: "COSTI PROPORZIONALI €/km"
+      proportional_costs: "COSTI PROPORZIONALI RS/km"
       km_costs_calculation_link: Calculate the kilometrical cost of your vehicle on the ACI website (Italian)
       send_email: Send an email when
       send_email_at_address: "We will send emails at the following address: %{email}"
