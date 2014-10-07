@@ -84,19 +84,19 @@ class User
 
   # Icare
   field :username_or_uid
-  field :vehicle_avg_consumption, type: Float, default: (1.741*7.0/100.0).round(2)
+  field :vehicle_avg_consumption, type: Float, default: (6*100.0/100.0).round(2)
 
   # Account
   field :locale
-  field :time_zone, default: 'UTC' # NOTE think about it
+  field :time_zone, default: 'New Delhi' # NOTE think about it
   field :telephone
   field :admin, type: Boolean, default: false
 
   # field :access_level, type: Integer, default: 0
   field :banned, type: Boolean, default: false
 
-  field :send_email_messages, type: Boolean, default: false
-  field :send_email_references, type: Boolean, default: false
+  field :send_email_messages, type: Boolean, default: true
+  field :send_email_references, type: Boolean, default: true
 
   validates :gender, inclusion: GENDER, allow_blank: true
   validates :time_zone, inclusion: ActiveSupport::TimeZone.zones_map(&:name).keys, allow_blank: true
