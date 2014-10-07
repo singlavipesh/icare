@@ -84,7 +84,7 @@ class User
 
   # Icare
   field :username_or_uid
-  field :vehicle_avg_consumption, type: Float, default: (6*100.0/100.0).round(2)
+  field :vehicle_avg_consumption, type: Float, default: (4*100.0/100.0).round(2)
 
   # Account
   field :locale
